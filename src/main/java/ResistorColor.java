@@ -1,16 +1,17 @@
-class ResistorColor {
+class gitResistorColor {
+    String[] colors = {"black", "brown", "red","orange","yellow","green","blue","violet","grey","white"};
     int colorCode(String color) {
-        String[] colors = {"black", "brown", "red","orange","yellow","green","blue","violet","grey","white"};
-        int i=0;
-        for(i=0;i<=9;i++){
-            if(color.equals(colors[i]))
+        int result=0;
+        for(int i=0;i<=9;i++){
+            if(color.equals(colors[i])){
+                result=i;
                 break;
+                }
         }
-        return i;
+        return result;
     }
 
     String[] colors() {
-        String[] colors = {"black", "brown", "red","orange","yellow","green","blue","violet","grey","white"};
         return colors;
     }
 }
